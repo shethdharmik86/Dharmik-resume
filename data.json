@@ -1,0 +1,128 @@
+{
+  "name": "Dharmik Sheth",
+  "role": "QA Trainee / Intern",
+  "summary": "Motivated and detail-oriented Quality Assurance (QA) trainee currently pursuing B.Sc. (IT) in the final semester and gaining real-world experience through a QA internship at Curebits Techlabs. Strong foundation in manual testing, test case creation, and bug reporting, with growing knowledge of automation testing using Python and Selenium. Passionate about ensuring software quality and continuously improving testing skills.",
+  "contactButtons": [
+    {
+      "label": "Phone",
+      "href": "tel:+918140610240"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/dharmik-sheth-1a78913a2"
+    },
+    {
+      "label": "Gmail",
+      "href": "https://mail.google.com/mail/?view=cm&fs=1&to=shethdharmik86@gmail.com"
+    }
+  ],
+  "quickInfo": [
+    "Location: Ahmedabad, Gujarat (Originally Surendranagar)",
+    "Internship: 3 months (1 month completed)",
+    "Open to: Relocation",
+    "Nationality: Indian"
+  ],
+  "skillGroups": [
+    {
+      "title": "Testing",
+      "items": [
+        "Manual testing",
+        "Test case writing",
+        "Bug reporting",
+        "Functional testing"
+      ]
+    },
+    {
+      "title": "Automation (Learning)",
+      "items": [
+        "Python (basic)",
+        "Selenium (basic)"
+      ]
+    },
+    {
+      "title": "Web Technologies",
+      "items": [
+        "HTML",
+        "CSS",
+        "PHP"
+      ]
+    },
+    {
+      "title": "Database",
+      "items": [
+        "MySQL",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Tools",
+      "items": [
+        "XAMPP / WAMP",
+        "Browser testing tools"
+      ]
+    }
+  ],
+  "softSkills": [
+    "Attention to detail",
+    "Quick learner",
+    "Positive attitude",
+    "Team player",
+    "Problem solving"
+  ],
+  "languages": [
+    "Gujarati",
+    "Hindi",
+    "English"
+  ],
+  "experience": [
+    {
+      "role": "QA Intern",
+      "company": "Curebits Techlabs",
+      "period": "3-Month Internship (Ongoing — 1 Month Completed)",
+      "location": "Ahmedabad, India",
+      "points": [
+        "Performing manual testing of web applications.",
+        "Writing and executing test cases to validate system functionality.",
+        "Identifying and reporting software bugs and issues.",
+        "Collaborating with developers to ensure product quality.",
+        "Learning automation testing using Python and Selenium alongside manual testing."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Phone Box — E-Commerce Web Application",
+      "desc": "Academic project for a web-based mobile phone shopping system.",
+      "points": [
+        "Designed and developed user login and registration system.",
+        "Implemented Add to Cart and Buy Now functionality.",
+        "Created CRUD operations for products, users, cart, and orders.",
+        "Performed manual testing using test cases for login, cart, and booking modules."
+      ],
+      "tech": "HTML, CSS, PHP, MySQL; Tools: XAMPP / WAMP"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. (Information Technology)",
+      "school": "C.U. Shah University, Surendranagar",
+      "year": "Final Semester (In Progress)"
+    },
+    {
+      "degree": "H.S.C (12th) — GSHSEB",
+      "school": "Ultra Vision Academy",
+      "year": "2022 · 65.86%"
+    },
+    {
+      "degree": "S.S.C (10th) — GSEB",
+      "school": "Ultra Vision Academy",
+      "year": "2021 · 57.60%"
+    }
+  ],
+  "personalDetails": [
+    "Date of Birth: 12 September 2005",
+    "Location: Ahmedabad (Open to Relocate)"
+  ],
+  "certs": [],
+  "footer": "Updated: March 19, 2026"
+}

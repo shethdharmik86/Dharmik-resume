@@ -1,0 +1,77 @@
+--- PAGE 1 ---
+DHARMIK SHETH 
+Ahmedabad, Gujarat (Originally Surendranagar) 
+Phone: 8140610240 | Email: shethdharmik86@gmail.com 
+LinkedIn: https://www.linkedin.com/in/dharmik-sheth-1a78913a2 
+Professional Summary 
+Motivated and detail-oriented Quality Assurance (QA) trainee with a strong foundation in 
+software development and testing concepts. Currently pursuing B.Sc. (IT) – Final Semester 
+and gaining real-world experience through a QA internship at Curebits Techlabs. Skilled in 
+manual testing, test case creation, and bug reporting, with growing knowledge in 
+automation testing using Python and Selenium. Passionate about ensuring software quality 
+and continuously improving testing skills. 
+Technical Skills 
+Testing 
+ Manual Testing 
+ Test Case Writing 
+ Bug Reporting 
+ Functional Testing 
+Automation (Learning) 
+ Python (Basic) 
+ Selenium (Basic) 
+Web Technologies 
+ HTML 
+ CSS 
+ PHP 
+Database 
+ MySQL 
+ SQL 
+Tools 
+ XAMPP / WAMP 
+--- PAGE 2 ---
+ Browser Testing Tools 
+Professional Experience 
+QA Intern – Curebits Techlabs, Ahmedabad 
+3-Month Internship (Currently Ongoing – 1 Month Completed) 
+Responsibilities 
+ Performing manual testing of web applications. 
+ Writing and executing test cases to validate system functionality. 
+ Identifying and reporting software bugs and issues. 
+ Collaborating with developers to ensure product quality. 
+ Learning automation testing using Python and Selenium alongside manual testing. 
+Academic Project 
+Phone Box – E-Commerce Web Application 
+Developed a web-based mobile phone shopping system as an academic project during B.Sc. 
+(IT). 
+Key Contributions 
+ Designed and developed user login and registration system. 
+ Implemented Add to Cart and Buy Now functionality. 
+ Created CRUD operations for products, users, cart, and orders. 
+ Performed manual testing using test cases for login, cart, and booking modules. 
+Technologies Used 
+ Frontend: HTML, CSS 
+ Backend: PHP 
+ Database: MySQL 
+ Tools: XAMPP / WAMP 
+Education 
+B.Sc. (Information Technology) – C.U. Shah University, Surendranagar 
+Currently in Final Semester 
+H.S.C (12th) – Ultra Vision Academy – GSHSEB 
+Year: 2022 | Percentage: 65.86% 
+--- PAGE 3 ---
+S.S.C (10th) – Ultra Vision Academy – GSEB 
+Year: 2021 | Percentage: 57.60% 
+Soft Skills 
+ Attention to Detail 
+ Quick Learner 
+ Positive Attitude 
+ Team Player 
+ Problem Solving 
+Languages 
+ Gujarati 
+ Hindi 
+ English 
+Personal Details 
+Date of Birth: 12 September 2005 
+Nationality: Indian 
+Location: Ahmedabad (Open to Relocate) 
