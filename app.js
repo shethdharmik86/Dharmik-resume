@@ -1,4 +1,4 @@
-function renderChips(container, items) {
+ï»¿function renderChips(container, items) {
   container.innerHTML = "";
   items.forEach((s) => {
     const span = document.createElement("span");
@@ -29,7 +29,7 @@ async function loadResume() {
   });
 
   const quick = document.getElementById("quick");
-  quick.innerHTML = "<h3>Quick Info</h3>";
+  quick.innerHTML = "<h3>Key Information</h3>";
   if (data.quickInfo && data.quickInfo.length > 0) {
     data.quickInfo.forEach((q) => {
       const p = document.createElement("p");
@@ -88,11 +88,11 @@ async function loadResume() {
       div.innerHTML =
         "<h3>" +
         e.role +
-        " · " +
+        " - " +
         e.company +
         "</h3><div class=\"meta\">" +
         e.period +
-        " · " +
+        " - " +
         e.location +
         "</div>";
 
@@ -150,7 +150,7 @@ async function loadResume() {
         ed.degree +
         "</h3><div class=\"meta\">" +
         ed.school +
-        " · " +
+        " - " +
         ed.year +
         "</div>";
       education.appendChild(div);
@@ -199,3 +199,4 @@ loadResume().catch((err) => {
     "Please keep index.html, style.css, app.js, and data.json in the same folder.</p>";
   console.error(err);
 });
+

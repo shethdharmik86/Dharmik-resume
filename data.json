@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "Dharmik Sheth",
   "role": "QA Intern",
   "summary": "Motivated and detail-oriented Quality Assurance (QA) professional currently in the final semester of B.Sc. (IT), with hands-on experience gained through a QA internship at Curebits Techlabs. Strong foundation in manual testing, including test case design and defect tracking, along with growing proficiency in automation testing using Python and Selenium. Committed to delivering high-quality software and continuously enhancing testing expertise.",
@@ -16,7 +16,7 @@
       "href": "https://mail.google.com/mail/?view=cm&fs=1&to=shethdharmik86@gmail.com"
     }
   ],
-  "Key Information": [
+  "quickInfo": [
     "Location: Ahmedabad, Gujarat (Originally Surendranagar)",
     "Internship: 3 months (1 month completed)",
     "Open to: Relocation",
@@ -93,7 +93,7 @@
   ],
   "projects": [
     {
-      "name": "Phone Box — E-Commerce Web Application",
+      "name": "Phone Box - E-Commerce Web Application",
       "desc": "Academic project for a web-based mobile phone shopping system.",
       "points": [
         "Designed and developed user login and registration system.",
@@ -111,14 +111,14 @@
       "year": "Final Semester (In Progress)"
     },
     {
-      "degree": "H.S.C (12th) — GSHSEB",
+      "degree": "H.S.C (12th) - GSHSEB",
       "school": "Ultra Vision Academy",
-      "year": "2022 · 65.86%"
+      "year": "2022 - 65.86%"
     },
     {
-      "degree": "S.S.C (10th) — GSEB",
+      "degree": "S.S.C (10th) - GSEB",
       "school": "Ultra Vision Academy",
-      "year": "2021 · 57.60%"
+      "year": "2021 - 57.60%"
     }
   ],
   "personalDetails": [
