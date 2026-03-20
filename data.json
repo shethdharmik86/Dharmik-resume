@@ -1,7 +1,7 @@
 {
   "name": "Dharmik Sheth",
-  "role": "QA Trainee / Intern",
-  "summary": "Motivated and detail-oriented Quality Assurance (QA) trainee currently pursuing B.Sc. (IT) in the final semester and gaining real-world experience through a QA internship at Curebits Techlabs. Strong foundation in manual testing, test case creation, and bug reporting, with growing knowledge of automation testing using Python and Selenium. Passionate about ensuring software quality and continuously improving testing skills.",
+  "role": "QA Intern",
+  "summary": "Motivated and detail-oriented Quality Assurance (QA) professional currently in the final semester of B.Sc. (IT), with hands-on experience gained through a QA internship at Curebits Techlabs. Strong foundation in manual testing, including test case design and defect tracking, along with growing proficiency in automation testing using Python and Selenium. Committed to delivering high-quality software and continuously enhancing testing expertise.",
   "contactButtons": [
     {
       "label": "Phone",
@@ -16,7 +16,7 @@
       "href": "https://mail.google.com/mail/?view=cm&fs=1&to=shethdharmik86@gmail.com"
     }
   ],
-  "quickInfo": [
+  "Key Information": [
     "Location: Ahmedabad, Gujarat (Originally Surendranagar)",
     "Internship: 3 months (1 month completed)",
     "Open to: Relocation",
@@ -27,9 +27,8 @@
       "title": "Testing",
       "items": [
         "Manual testing",
-        "Test case writing",
-        "Bug reporting",
-        "Functional testing"
+        "Test Case Design",
+        "Bug Reporting Tools"
       ]
     },
     {
@@ -58,7 +57,10 @@
       "title": "Tools",
       "items": [
         "XAMPP / WAMP",
-        "Browser testing tools"
+        "Browser testing tools",
+        "Chrome DevTool",
+        "Postman"
+        
       ]
     }
   ],
@@ -78,14 +80,14 @@
     {
       "role": "QA Intern",
       "company": "Curebits Techlabs",
-      "period": "3-Month Internship (Ongoing — 1 Month Completed)",
+      "period": "Internship (Ongoing)",
       "location": "Ahmedabad, India",
       "points": [
-        "Performing manual testing of web applications.",
-        "Writing and executing test cases to validate system functionality.",
-        "Identifying and reporting software bugs and issues.",
+        "Conducting manual testing of web applications to validate features and user workflows.",
+        "Creating and executing detailed test cases and test scenarios.",
+        "Reporting and tracking defects with proper documentation and severity levels.",
         "Collaborating with developers to ensure product quality.",
-        "Learning automation testing using Python and Selenium alongside manual testing."
+        "Working closely with development teams to ensure timely bug resolution Building foundational skills in automation testing using Python and Selenium"
       ]
     }
   ],
