@@ -14,55 +14,95 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--ink);
   background: var(--bg);
+  min-height: 100vh;
 }
 
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  background-size: 180px;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.4;
-}
+/* ── Cinematic Background ── */
 
 .bg {
-  display: none;
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
 }
+
+/* Deep radial vignette */
+.bg__vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,0.75) 100%);
+}
+
+/* Film grain via SVG noise */
+.bg__grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.45;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  background-size: 160px;
+}
+
+/* Subtle horizontal scanlines */
+.bg__scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.04) 3px,
+    rgba(0,0,0,0.04) 4px
+  );
+}
+
+/* ── All content above bg ── */
+.hero,
+.container,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Hero ── */
 
 .hero {
   display: grid;
   gap: 20px;
   grid-template-columns: 1.3fr 0.7fr;
-  padding: 64px 8vw 24px;
+  padding: 72px 8vw 28px;
   border-bottom: 1px solid var(--line);
   position: relative;
 }
 
+/* Amber glow line under hero */
 .hero::after {
   content: '';
   position: absolute;
   bottom: -1px;
-  left: 0;
-  right: 0;
+  left: 0; right: 0;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .hero__content h1 {
   font-family: var(--font-head);
-  font-size: clamp(34px, 5vw, 60px);
+  font-size: clamp(34px, 5vw, 62px);
   margin: 8px 0 10px;
   letter-spacing: 1px;
   font-weight: 400;
   line-height: 1.1;
+  color: var(--ink);
 }
 
 .eyebrow {
@@ -78,14 +118,14 @@ body::before {
   font-size: 15px;
   color: var(--muted);
   max-width: 720px;
-  line-height: 1.8;
+  line-height: 1.85;
   font-weight: 300;
 }
 
 .cta {
-  margin-top: 16px;
+  margin-top: 18px;
   display: flex;
-  gap: 14px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
@@ -93,12 +133,12 @@ body::before {
   text-decoration: none;
   color: var(--accent);
   border-bottom: 1px solid transparent;
-  font-size: 13px;
+  font-size: 12px;
   padding-bottom: 2px;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   transition: border-color 160ms ease, opacity 160ms ease;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 .cta a:hover {
@@ -107,7 +147,7 @@ body::before {
 }
 
 .hero__card {
-  padding: 0 0 0 20px;
+  padding: 4px 0 4px 20px;
   border-left: 1px solid var(--accent);
   opacity: 0.85;
 }
@@ -117,6 +157,7 @@ body::before {
   font-family: var(--font-head);
   font-size: 22px;
   font-weight: 500;
+  color: var(--ink);
 }
 
 .hero__card p {
@@ -124,41 +165,48 @@ body::before {
   color: var(--muted);
   font-size: 14px;
   font-weight: 300;
+  line-height: 1.6;
 }
 
+/* ── Container ── */
+
 .container {
-  padding: 24px 8vw 70px;
+  padding: 28px 8vw 80px;
   max-width: 980px;
   margin: 0 auto;
   display: grid;
-  gap: 22px;
+  gap: 24px;
 }
 
+/* ── Sections ── */
+
 .section {
-  padding-top: 14px;
+  padding-top: 16px;
   border-top: 1px solid var(--line);
   animation: fadeUp 900ms ease both;
   position: relative;
 }
 
+/* Amber tick on divider */
 .section::before {
   content: '';
   position: absolute;
-  top: -1px;
-  left: 0;
-  width: 40px;
-  height: 1px;
+  top: -1px; left: 0;
+  width: 36px; height: 1px;
   background: var(--accent);
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 .section h2 {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   font-family: var(--font-head);
   font-size: 26px;
   font-weight: 400;
   letter-spacing: 0.5px;
+  color: var(--ink);
 }
+
+/* ── Chips ── */
 
 .chips {
   display: flex;
@@ -167,24 +215,32 @@ body::before {
 }
 
 .chip {
-  background: #141410;
-  padding: 5px 10px;
+  background: #111109;
+  padding: 5px 11px;
   border-radius: 2px;
   font-size: 12px;
   color: var(--muted);
   border: 1px solid var(--line);
   letter-spacing: 0.5px;
+  transition: border-color 160ms, color 160ms;
 }
+
+.chip:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+/* ── Skill Groups ── */
 
 .skill-groups {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .skill-group {
-  background: #0e0e10;
+  background: #0d0d0f;
   padding: 12px 14px;
   border-radius: 2px;
   border: 1px solid var(--line);
@@ -195,29 +251,31 @@ body::before {
   font-family: var(--font-head);
   font-size: 18px;
   font-weight: 500;
+  color: var(--ink);
 }
+
+/* ── Timeline ── */
 
 .timeline {
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .item {
-  padding: 8px 0 8px 16px;
+  padding: 8px 0 8px 18px;
   border-left: 1px solid var(--line);
   position: relative;
 }
 
+/* Amber dot marker */
 .item::before {
   content: '';
   position: absolute;
-  left: -3px;
-  top: 12px;
-  width: 5px;
-  height: 5px;
+  left: -3px; top: 14px;
+  width: 5px; height: 5px;
   background: var(--accent);
   border-radius: 50%;
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 .item h3 {
@@ -225,13 +283,14 @@ body::before {
   font-family: var(--font-head);
   font-size: 20px;
   font-weight: 400;
+  color: var(--ink);
 }
 
 .item .meta {
   color: var(--muted);
   font-size: 12px;
   margin-bottom: 8px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
@@ -241,8 +300,10 @@ body::before {
   color: var(--muted);
   font-size: 14px;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.75;
 }
+
+/* ── Grid / Cards ── */
 
 .grid {
   display: grid;
@@ -251,21 +312,20 @@ body::before {
 }
 
 .card {
-  padding: 8px 0 8px 16px;
+  padding: 8px 0 8px 18px;
   border-left: 1px solid var(--line);
   background: transparent;
   position: relative;
 }
 
+/* Gradient fade on card border */
 .card::before {
   content: '';
   position: absolute;
-  left: -1px;
-  top: 0;
-  bottom: 0;
+  left: -1px; top: 0; bottom: 0;
   width: 1px;
   background: linear-gradient(to bottom, var(--accent), transparent);
-  opacity: 0.4;
+  opacity: 0.45;
 }
 
 .card h3 {
@@ -273,6 +333,7 @@ body::before {
   font-family: var(--font-head);
   font-size: 19px;
   font-weight: 400;
+  color: var(--ink);
 }
 
 .card ul {
@@ -281,26 +342,35 @@ body::before {
   color: var(--muted);
   font-size: 14px;
   font-weight: 300;
+  line-height: 1.7;
 }
+
+/* ── List ── */
 
 .list {
   display: grid;
   gap: 10px;
 }
 
+/* ── Footer ── */
+
 .footer {
-  padding: 30px 8vw 40px;
+  position: relative;
+  z-index: 1;
+  padding: 28px 8vw 44px;
   color: var(--muted);
-  font-size: 12px;
-  letter-spacing: 1px;
+  font-size: 11px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   border-top: 1px solid var(--line);
 }
 
+/* ── Animation ── */
+
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -308,8 +378,25 @@ body::before {
   }
 }
 
+/* Stagger sections */
+.section:nth-child(1) { animation-delay: 80ms; }
+.section:nth-child(2) { animation-delay: 160ms; }
+.section:nth-child(3) { animation-delay: 240ms; }
+.section:nth-child(4) { animation-delay: 320ms; }
+.section:nth-child(5) { animation-delay: 400ms; }
+.section:nth-child(6) { animation-delay: 480ms; }
+.section:nth-child(7) { animation-delay: 560ms; }
+.section:nth-child(8) { animation-delay: 640ms; }
+
+/* ── Responsive ── */
+
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
+  }
+  .hero__card {
+    border-left: none;
+    border-top: 1px solid var(--accent);
+    padding: 16px 0 0;
   }
 }
